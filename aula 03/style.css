@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    color: white;
+    background-color: #37bb58;
+}
+
+header h1{
+    padding: 10px;
+}
+
+menu{
+    display: none;
+}
+
+menu ul li{
+    padding: 9px;
+    display: inline-block;
+}
+
+menu ul{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #32aa50;
+}
+
+menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px;
+}
+
+menu a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    transition-duration: 1s;
+}
+
+header p{
+    display: block;
+    cursor: pointer;
+}
+
+header img:hover{
+    color: white;
+}
+
+main{
+    width: 900px;
+    margin: auto;
+    padding: 15px;
+
+}
+
+section{
+    display: inline-block;
+}
+
+
+.diversao{
+    width: 765px;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 2em;
+    background-image: linear-gradient(to bottom, #5cff8a, #1a4d29);
+}
+
+div:hover{
+    color: black;
+    background-color: #ffffffc7;
+    transition-duration: 1s;
+}
+
+.painel{
+    margin-top: 10px;
+    padding: 15px;
+    border-left: 1.2px solid white;
+}
+
+.corpo div{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-size: 1.5em;
+    background-image: linear-gradient(to bottom, #5cff8a, #1a4d29);
+}
+
+main h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

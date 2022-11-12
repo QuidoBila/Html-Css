@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Menu hamburguer</h1>
+        <img src="outline_menu_black_24dp.png" alt="" onclick="clickMenu()">
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h1>Testando menu</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, nulla excepturi. Tempora sunt doloremque quaerat distinctio quae similique velit atque recusandae in, blanditiis consectetur odio ipsam ex animi facilis totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure deserunt harum illum ex pariatur necessitatibus vel rerum dolorem voluptate veritatis magni cum quam reiciendis ullam ipsum accusamus, eos quaerat!
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, sunt iure? Deserunt dolore, sunt blanditiis quisquam provident veniam labore voluptas quasi praesentium cum corporis natus amet, maxime modi assumenda ipsam?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, sit! Cumque distinctio sed tenetur atque officia quasi! Commodi corrupti similique, quo fugiat est temporibus tenetur itaque nesciunt libero autem delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae error, ducimus dolor non odit laudantium vel blanditiis quod, omnis dicta, ratione architecto esse nihil vitae praesentium expedita amet quo consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, vel nihil ut illum temporibus odit accusantium consequuntur ex quia animi labore rem laboriosam in quam amet totam eum illo. Adipisci!
+        </p>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+        }else{
+            itens.style.display = 'block'
+        }
+        }
+    </script>
+</body>
+</html>
