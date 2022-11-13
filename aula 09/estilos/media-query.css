@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@media print {
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    body::after{
+        content: 'Essa impressao foi feita atraves do site Bla Ba Bla';
+        text-decoration: underline;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #impressora{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: block;}
+    #impressora{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #impressora{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #impressora{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
+

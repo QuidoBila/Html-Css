@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Menu hamburguer</h1>
-        <img src="outline_menu_black_24dp.png" alt="" onclick="clickMenu()">
+        <p><img src="outline_menu_black_24dp.png" alt="" onclick="clickMenu()" id="iburguer"></p>
         <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -32,12 +33,20 @@
         </p>
     </main>
     <script>
-        function clickMenu(){
-            if(itens.style.display == 'block'){
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
                 itens.style.display = 'none'
-        }else{
-            itens.style.display = 'block'
+            }
         }
+
+        function clickMenu(){
+                if(itens.style.display == 'block'){
+                    itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
         }
     </script>
 </body>
