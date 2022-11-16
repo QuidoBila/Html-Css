@@ -23,9 +23,6 @@ header{
     align-items: center;
 }
 
-.nav-list{
-    display: none;
-}
 
 .menu-mobile{
     display: none;
@@ -73,13 +70,6 @@ header{
     background-color: #24252a;
     border-color: transparent;
     
-}
-
-@media screen and (min-width: 768px) {
-    .nav-mobile{
-        display: none;
-    }
-
 }
 
 
