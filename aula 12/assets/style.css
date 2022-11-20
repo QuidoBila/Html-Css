@@ -139,9 +139,9 @@ footer a{
 }
 
 footer p{
-    display: inline-block;
-    margin-left: 5px;
+    padding: 8px 0px;
 }
+
 
 
 @media screen and (max-width: 768px) {
