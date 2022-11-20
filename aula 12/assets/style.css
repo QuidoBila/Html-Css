@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: #040a1696;
+}
+
+header{
+    background-color: #25242a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-item{
+    margin: 0px 15px;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+}
+
+.login-button button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+main{
+    width: 66vw;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px solid #464646;
+}
+
+main h1{
+    margin-bottom: 6px;
+}
+
+main h2, h3{
+    margin: 10px 0px;
+}
+
+main p a{
+    color: #0187a7;
+    text-decoration: none;
+    padding-left: 12px;
+    font-weight: 500;
+    border-left: 3px solid #0187a7;
+}
+
+main p{
+    text-indent: 16px;
+    text-align: justify;
+    line-height: 20px;
+    margin: 10px 0px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+figure{
+    text-align: center;
+    background-color: #8080804d;
+    font-weight: 600;
+    padding: 15px;
+    margin: 8px 0px;
+}
+
+.imagem{
+    width: 50%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+footer{
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    background-color: #25242a;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nav-list{
+        display: none;
+    }
+    
+    .login-button{
+        display: none;
+    }
+
+    .logo h1{
+        display: block;
+        text-align: center;
+        width: 60vw;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu-icon button{
+        color: #fff;
+        border: none;
+        background-color: transparent;
+    }
+
+    img{
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    .imagem{
+        width: 50%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    .mobile-menu .login-button{
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .login-button button{
+        width: 90%;
+    }
+    
+    .mobile-menu ul{
+        list-style: none;
+    }
+
+    .mobile-menu ul li{
+        padding: 12px 0px;
+        text-align: center;
+    }
+
+    main{
+        width: 78vw;
+    }
+}
+

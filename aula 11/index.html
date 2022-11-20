@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/estilo.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="assets/menu.js">
     <title>Menu Responsivo</title>
 </head>
 <body>
@@ -14,25 +15,35 @@
                 <h1>logo</h1>
             </div>
 
-            <div class="nav-mobile">
-                <button><img src="assets/img/menu01.png" alt="Menu" class="login-button" onclick="abrirMenu()"></button>
-                <div class="menu-mobile" id="itens">
-                
-                    <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    </ul>
-                    <div class="logar">
-                        <button class="botao"><a href="#">Entrar</a></button>
-                    </div>
-                </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button><img src="assets/img/menu_white.svg" alt="menu" onclick="menuShow()"></button>
             </div>
             
         </menu>
-    </header>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
 
-    <script src="menu.js">
+        </div>
+    </header>
+    <script src="./assets/menu.js">
 
     </script>
 </body>
